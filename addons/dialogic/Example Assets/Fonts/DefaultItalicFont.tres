@@ -3,5 +3,5 @@
 [ext_resource path="res://Dialogues/Fonts/m5x7.ttf" type="DynamicFontData" id=1]
 
 [resource]
-size = 30
+size = 17
 font_data = ExtResource( 1 )

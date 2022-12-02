@@ -4,7 +4,7 @@
 			"character": "character-1669825820.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Was geht ab"
+			"text": "Hello there Ryld the knight!\nI heard your princess got taken away!\nI might know where she might be! But i will only help you, if you help me...\nYou see, i lost my book and it was the only thing that my father left me before he passed away.\nif you help me find it, I will for sure help you find your way to your princess."
 		},
 		{
 			"character": "character-1669825820.json",
@@ -13,21 +13,33 @@
 
 			],
 			"portrait": "",
-			"question": "Hilfst du mir"
+			"question": "so... will you help me?"
 		},
 		{
-			"choice": "Ja",
+			"choice": "Yes",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"choice": "Nein",
+			"character": "character-1669825820.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you!"
+		},
+		{
+			"choice": "No",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"character": "character-1669825820.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "if you change your mind, you'll find me here."
 		},
 		{
 			"event_id": "dialogic_013"
