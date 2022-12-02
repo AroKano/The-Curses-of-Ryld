@@ -1,7 +1,19 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Menu/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Logo/Logo.png" type="Texture" id=2]
+
+[sub_resource type="DynamicFontData" id=4]
+font_path = "res://Dialogues/Fonts/m5x7.ttf"
+
+[sub_resource type="DynamicFont" id=1]
+font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = SubResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = SubResource( 4 )
 
 [node name="Menu" type="Control"]
 anchor_left = 0.5
@@ -36,21 +48,24 @@ rect_scale = Vector2( 0.5, 0.5 )
 
 [node name="StartBTN" type="Button" parent="Menu"]
 margin_right = 128.0
-margin_bottom = 20.0
+margin_bottom = 25.0
 focus_neighbour_top = NodePath("../QuitBTN")
+custom_fonts/font = SubResource( 1 )
 text = "Play"
 
 [node name="OptionsBTN" type="Button" parent="Menu"]
-margin_top = 24.0
+margin_top = 33.0
 margin_right = 128.0
-margin_bottom = 44.0
+margin_bottom = 58.0
+custom_fonts/font = SubResource( 2 )
 text = "Options"
 
 [node name="QuitBTN" type="Button" parent="Menu"]
-margin_top = 48.0
+margin_top = 66.0
 margin_right = 128.0
-margin_bottom = 68.0
+margin_bottom = 91.0
 focus_neighbour_bottom = NodePath("../StartBTN")
+custom_fonts/font = SubResource( 3 )
 text = "Quit"
 
 [connection signal="pressed" from="Menu/StartBTN" to="." method="_on_StartBTN_pressed"]
