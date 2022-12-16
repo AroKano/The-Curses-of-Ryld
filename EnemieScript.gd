@@ -83,10 +83,12 @@ func _on_HurtBox_area_entered(area):
 	hurtbox.start_invincibility(0.4)
 
 func _on_Stats_no_health():
-	queue_free()
+	if Quests.IntroQuest:
+		Quests.blop_killed += 1
 	var enemyDeathEffect = EnemyDeathEffect.instance()
 	get_parent().add_child(enemyDeathEffect)
 	enemyDeathEffect.global_position = global_position
+	queue_free()
 
 
 func _on_HurtBox_invincibility_started():

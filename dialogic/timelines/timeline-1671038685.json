@@ -1,0 +1,63 @@
+{
+	"events": [
+		{
+			"character": "character-1669825820.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Did you find my book?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "found",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1669825820.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Thank you very much!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "no",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1669825820.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Let me know if you found my book!"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1671038685.json",
+		"name": "check"
+	}
+}

@@ -22,9 +22,10 @@ visible = false
 position = Vector2( 0, -5 )
 shape = SubResource( 1 )
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="NPC" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC"]
 shape = SubResource( 2 )
 
-[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_entered" from="NPC" to="." method="_on_NPC_body_entered"]
+[connection signal="body_exited" from="NPC" to="." method="_on_NPC_body_exited"]

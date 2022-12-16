@@ -23,6 +23,10 @@
 			"value": ""
 		},
 		{
+			"emit_signal": "yes",
+			"event_id": "dialogic_040"
+		},
+		{
 			"character": "character-1669825820.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
@@ -34,6 +38,10 @@
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"emit_signal": "no",
+			"event_id": "dialogic_040"
 		},
 		{
 			"character": "character-1669825820.json",
@@ -52,6 +60,6 @@
 	"metadata": {
 		"dialogic-version": "1.4.5",
 		"file": "timeline-1669825854.json",
-		"name": "NPC1"
+		"name": "start"
 	}
 }
