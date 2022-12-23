@@ -24,7 +24,7 @@
 			"character": "character-1669825820.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Thank you very much!"
+			"text": "You're my hero Ryld!\n\nWhat I didn't mention earlier, is that this book also contains a map, which shows the way to the cave where your princess got taken.\n\nRemember carefully:\nLook for a cave entrance and when you reach the caves, enter the middle one. That's where you will find your next quest!"
 		},
 		{
 			"event_id": "dialogic_022",
@@ -45,7 +45,7 @@
 			"character": "character-1669825820.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Let me know if you found my book!"
+			"text": "Please find it, otherwise I can't help you!"
 		},
 		{
 			"event_id": "dialogic_013"

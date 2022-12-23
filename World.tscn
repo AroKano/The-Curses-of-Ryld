@@ -19,13 +19,11 @@
 position = Vector2( 3, 0 )
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 2841, 1418 )
+position = Vector2( -1092, -877 )
 texture = ExtResource( 3 )
+centered = false
 region_enabled = true
-region_rect = Rect2( -8592, -2480, 7856, 4560 )
-__meta__ = {
-"_edit_lock_": true
-}
+region_rect = Rect2( -9221.02, -6082.35, 2410.45, 787.085 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( -788, -663 )
