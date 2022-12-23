@@ -8,6 +8,7 @@ var is_quest_finished = false
 func _ready():
 	pass
 	
+# warning-ignore:unused_argument
 func unpause (timeline_end):
 	get_tree().paused = false	
 
@@ -22,17 +23,15 @@ func _on_NPC_body_entered(body):
 			dialog.connect("dialogic_signal", self, "dialog_msg")
 			dialog.connect("timeline_end", self, "unpause")
 		if is_quest_accepted and not is_quest_finished:
-			dialog = Dialogic.start("check")
-			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
-			dialog.connect("timeline_end", self, "unpause")
+			if Quests.bats_killed >= 5:
+				dialog = Dialogic.start("check")
+				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
+				dialog.connect("timeline_end", self, "unpause")
 		if is_quest_accepted and is_quest_finished:
-			dialog = Dialogic.start("finish")
-			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
-			dialog.connect("timeline_end", self, "unpause")
-		if Quests.bats_killed >= 5:
-			dialog = Dialogic.start('finish')
-			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
-			dialog.connect("timeline_end", self, "unpause")
+			if Quests.bats_killed >= 5:
+				dialog = Dialogic.start("finish")
+				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
+				dialog.connect("timeline_end", self, "unpause")
 		add_child(dialog)
 
 		

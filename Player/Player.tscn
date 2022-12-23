@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player-proto.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Music and Sounds/Swipe.wav" type="AudioStream" id=7]
 [ext_resource path="res://Music and Sounds/Evade.wav" type="AudioStream" id=8]
 [ext_resource path="res://Player/WhiteColorShader.tres" type="Shader" id=9]
+[ext_resource path="res://Player/PlayerStats.tscn" type="PackedScene" id=10]
 
 [sub_resource type="ShaderMaterial" id=52]
 shader = ExtResource( 9 )
@@ -851,7 +852,7 @@ material = SubResource( 52 )
 position = Vector2( 0, -9 )
 texture = ExtResource( 2 )
 hframes = 60
-frame = 18
+frame = 36
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -1.5708
@@ -917,6 +918,8 @@ reset_on_save = false
 anims/RESET = SubResource( 53 )
 anims/Start = SubResource( 49 )
 anims/Stop = SubResource( 50 )
+
+[node name="PlayerStats" parent="." instance=ExtResource( 10 )]
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 [connection signal="invincibility_ended" from="HurtBox" to="." method="_on_HurtBox_invincibility_ended"]

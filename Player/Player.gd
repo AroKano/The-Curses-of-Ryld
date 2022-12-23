@@ -10,13 +10,16 @@ export var FRICTION = 500
 enum {
 	MOVE,
 	ROLL,
-	ATTACK
+	ATTACK,
 }
+
+enum Potion { HEALTH }
 
 var state = MOVE
 var velocity = Vector2.ZERO
 var roll_vector = Vector2.DOWN
 var stats = PlayerStats
+var health_potions = 0
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
