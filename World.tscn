@@ -5560,6 +5560,3 @@ visible = false
 
 [node name="Tasks" parent="UI" instance=ExtResource( 14 )]
 visible = false
-
-[node name="Bush" parent="UI/Tasks" instance=ExtResource( 1 )]
-position = Vector2( -969, -548 )
