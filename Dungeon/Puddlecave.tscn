@@ -1,18 +1,18 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://Dungeon/Assets/caveplant.png" type="Texture" id=1]
+[ext_resource path="res://Dungeon/Assets/puddlecave.png" type="Texture" id=1]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 3.0
-height = 10.0
+radius = 2.90196
+height = 0.0
 
-[node name="Plant" type="StaticBody2D"]
+[node name="Puddlecave" type="StaticBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 1, -12 )
+position = Vector2( 32, 32 )
 texture = ExtResource( 1 )
-hframes = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, -4 )
+position = Vector2( 20, 24 )
+rotation = 1.52344
 shape = SubResource( 1 )
