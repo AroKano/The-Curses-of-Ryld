@@ -223,10 +223,6 @@ Tab={
 2d_physics/layer_6="SoftCollisions"
 2d_physics/layer_7="Door"
 
-[network]
-
-ssl/certificates="res://ca-certificates.crt"
-
 [physics]
 
 common/enable_pause_aware_picking=true
