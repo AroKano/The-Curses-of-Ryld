@@ -5560,3 +5560,6 @@ visible = false
 
 [node name="Tasks" parent="UI" instance=ExtResource( 14 )]
 visible = false
+
+[node name="Grass" parent="." instance=ExtResource( 9 )]
+position = Vector2( -849, -580 )
