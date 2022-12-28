@@ -14,9 +14,5 @@ func set_is_paused(value):
 func _on_Continue_pressed():
 	self.is_paused = false
 
-func _on_Options_pressed():
-	var options = load("").instance()
-	get_tree().current_scene.add_child(options)
-
 func _on_Quit_pressed():
 	get_tree().quit()

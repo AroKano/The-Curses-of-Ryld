@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Tree2.png" type="Texture" id=2]
@@ -6,11 +6,13 @@
 [ext_resource path="res://World/Bush2.png" type="Texture" id=4]
 [ext_resource path="res://World/House.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Dungeon/Assets/Stone.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Dungeon/Stone.tscn" type="PackedScene" id=7]
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=8]
 [ext_resource path="res://World/Grass.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Enemies/Blop.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World/GrassBackgroundred.png" type="Texture" id=11]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Enemies/Bat-V1.tscn" type="PackedScene" id=13]
 [ext_resource path="res://UI/Tasks.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Menu/PauseMenu.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Menu/Menu.tscn" type="PackedScene" id=16]
@@ -67,7 +69,7 @@
 0/z_index = 0
 
 [node name="World" type="Node2D"]
-position = Vector2( 3, 0 )
+position = Vector2( 1104, 896 )
 
 [node name="RedBG" type="TileMap" parent="."]
 tile_set = SubResource( 3 )
@@ -5476,6 +5478,9 @@ position = Vector2( -1275, -139 )
 
 [node name="Bat-V1" type="YSort" parent="YSort/Enemies"]
 
+[node name="Bat-V1" parent="YSort/Enemies/Bat-V1" instance=ExtResource( 13 )]
+position = Vector2( -901, -458 )
+
 [node name="Bat-V2" type="YSort" parent="YSort/Enemies"]
 
 [node name="Blop" type="YSort" parent="YSort/Enemies"]
@@ -5583,3 +5588,21 @@ visible = false
 
 [node name="Tasks" parent="UI" instance=ExtResource( 14 )]
 visible = false
+
+[node name="HealthUI" parent="UI" instance=ExtResource( 12 )]
+margin_left = 6.0
+margin_top = 7.0
+margin_right = 54.0
+margin_bottom = 17.0
+
+[node name="Bat-V1" parent="." instance=ExtResource( 13 )]
+position = Vector2( -616, -657 )
+
+[node name="Bat-V2" parent="." instance=ExtResource( 13 )]
+position = Vector2( -658, -664 )
+
+[node name="Bat-V3" parent="." instance=ExtResource( 13 )]
+position = Vector2( -609, -631 )
+
+[node name="Bat-V4" parent="." instance=ExtResource( 13 )]
+position = Vector2( -677, -592 )

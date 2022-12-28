@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/caveplant.png-1583f097d23be8ba3213b550e7ebdb46.stex"
+path="res://.import/npc_1_portrait.png-b6ed46809faad33cc16d48804049103c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Dungeon/Assets/caveplant.png"
-dest_files=[ "res://.import/caveplant.png-1583f097d23be8ba3213b550e7ebdb46.stex" ]
+source_file="res://NPC/npc_1_portrait.png"
+dest_files=[ "res://.import/npc_1_portrait.png-b6ed46809faad33cc16d48804049103c.stex" ]
 
 [params]
 

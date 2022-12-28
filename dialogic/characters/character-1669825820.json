@@ -1,19 +1,19 @@
 {
 	"color": "#ffff0000",
-	"description": "Das ist Arkan",
-	"display_name": "",
-	"display_name_bool": false,
+	"description": "Das ist Olaf, der erste NPC",
+	"display_name": "Olaf",
+	"display_name_bool": true,
 	"id": "character-1669825820.json",
 	"mirror_portraits": false,
-	"name": "Arkan",
+	"name": "npc_1",
 	"nickname": "",
 	"nickname_bool": false,
-	"offset_x": 0,
-	"offset_y": 0,
+	"offset_x": 50,
+	"offset_y": -200,
 	"portraits": [
 		{
 			"name": "Default",
-			"path": ""
+			"path": "res://NPC/npc_1_portrait.png"
 		}
 	],
 	"scale": 100,

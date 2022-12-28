@@ -920,6 +920,7 @@ anims/Start = SubResource( 49 )
 anims/Stop = SubResource( 50 )
 
 [node name="PlayerStats" parent="." instance=ExtResource( 10 )]
+max_health = 7
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 [connection signal="invincibility_ended" from="HurtBox" to="." method="_on_HurtBox_invincibility_ended"]
