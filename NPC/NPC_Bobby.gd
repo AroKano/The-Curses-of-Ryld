@@ -16,25 +16,25 @@ func _on_NPC_body_entered(body):
 	if body.name == "Player":
 		active = true
 		if not is_quest_accepted and not is_quest_finished:
-			dialog = Dialogic.start("start")
+			dialog = Dialogic.start("start_Bobby")
 			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 			dialog.connect("dialogic_signal", self, "dialog_msg")
 			dialog.connect("timeline_end", self, "unpause")
 		if is_quest_accepted and not is_quest_finished:
-			if Quests.bats_killed <= 5:
+			if Quests.blop_killed <= 5:
 				Dialogic.set_variable("QuestRequirement", 1)
-				dialog = Dialogic.start("check_not_finished")
+				dialog = Dialogic.start("check_not_finished_Bobby")
 				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 				dialog.connect("dialogic_signal", self, "dialog_msg")
 				dialog.connect("timeline_end", self, "unpause")
-			if Quests.bats_killed >= 5:
+			if Quests.blop_killed >= 5:
 				Dialogic.set_variable("QuestRequirement", 5)
-				dialog = Dialogic.start("check_finished")
+				dialog = Dialogic.start("check_finished_Bobby")
 				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 				dialog.connect("dialogic_signal", self, "dialog_msg")
 				dialog.connect("timeline_end", self, "unpause")
 		if is_quest_accepted and is_quest_finished:
-				dialog = Dialogic.start("finish")
+				dialog = Dialogic.start("finish_Bobby")
 				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 				dialog.connect("dialogic_signal", self, "dialog_msg")
 				dialog.connect("timeline_end", self, "unpause")
@@ -47,11 +47,11 @@ func dialog_msg(string):
 		"yes":
 			is_quest_accepted = true
 			is_quest_finished = false
-			Quests.IntroQuest = true
+			Quests.Quest1 = true
 		"no":
 			is_quest_accepted = false
 			is_quest_finished = false
-			Quests.IntroQuest = false
+			Quests.Quest1 = false
 		"yes_not_finished":
 			is_quest_accepted = true
 			is_quest_finished = false

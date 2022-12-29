@@ -10,6 +10,7 @@ func _input(event: InputEvent) -> void:
 		get_tree().paused = newPauseState
 		if (newPauseState):
 			show()
+			get_node("QuestContainer").show_Quests()
 		else:
 			hide()
 

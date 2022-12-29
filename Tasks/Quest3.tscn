@@ -1,0 +1,31 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Enemies/Bat-V2.png" type="Texture" id=1]
+[ext_resource path="res://Tasks/Quest3.gd" type="Script" id=2]
+
+[node name="Quest3" type="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -70.0
+margin_bottom = -150.0
+rect_min_size = Vector2( 163, 24 )
+script = ExtResource( 2 )
+
+[node name="TextureRect" type="Sprite" parent="."]
+position = Vector2( 48, 19 )
+texture = ExtResource( 1 )
+hframes = 5
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 52.0
+margin_top = 3.0
+margin_right = 448.0
+margin_bottom = 65.0
+rect_scale = Vector2( 0.4, 0.4 )
+text = "Go and talk to Olaf"
+align = 1
+valign = 1
+autowrap = true
