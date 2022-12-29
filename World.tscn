@@ -173,7 +173,7 @@ cell_size = Vector2( 32, 32 )
 format = 1
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( -864, -648 )
+position = Vector2( -864, -665 )
 current = true
 smoothing_enabled = true
 
@@ -181,7 +181,7 @@ smoothing_enabled = true
 position = Vector2( 256, -144 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 6 )]
-position = Vector2( -1120, -504 )
+position = Vector2( -1120, -521 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
 remote_path = NodePath("../../../Camera2D")
