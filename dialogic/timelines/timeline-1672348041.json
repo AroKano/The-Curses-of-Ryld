@@ -1,0 +1,19 @@
+{
+	"events": [
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "MUAHAHAH\nSweet dreams Ryld, no one can win a battle with me!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1672348041.json",
+		"name": "finish_princess"
+	}
+}

@@ -15,9 +15,13 @@ enum {
 
 var velocity = Vector2.ZERO
 var knockback = Vector2.ZERO
+var active = false
+var is_quest_accepted = false
+var is_quest_finished = false
 
 var state = CHASE
 
+onready var dialog
 onready var sprite = $AnimatedSprite
 onready var stats = $Stats
 onready var playerDetectionZone = $PlayerDetectionZone
@@ -58,7 +62,10 @@ func _physics_process(delta):
 	if softCollision.is_colliding():
 		velocity += softCollision.get_push_vector() * 10
 	velocity = move_and_slide(velocity)
-
+	
+func unpause (timeline_end):
+	get_tree().paused = false
+	
 func accelerate_towards_point(point, delta):
 	var direction = global_position.direction_to(point)
 	velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
@@ -83,7 +90,7 @@ func _on_HurtBox_area_entered(area):
 	hurtbox.start_invincibility(0.4)
 
 func _on_Stats_no_health():
-	if Quests.Quest5:
+	if Quests.Quest4:
 		Quests.princess_killed += 1
 	var enemyDeathEffect = EnemyDeathEffect.instance()
 	get_parent().add_child(enemyDeathEffect)
@@ -97,3 +104,51 @@ func _on_HurtBox_invincibility_started():
 
 func _on_HurtBox_invincibility_ended():
 	animationPlayer.play("Stop")
+
+
+func _on_NPC_talk_body_entered(body):
+	if body.name == "Player":
+		active = true
+		if not is_quest_accepted and not is_quest_finished:
+			dialog = Dialogic.start("start_princess")
+			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
+			dialog.connect("dialogic_signal", self, "dialog_msg")
+			dialog.connect("timeline_end", self, "unpause")
+		if is_quest_accepted and is_quest_finished:
+			if Quests.princess_killed == 1:
+				Dialogic.set_variable("QuestRequirement", 1)
+				dialog = Dialogic.start("finish_princess")
+				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
+				dialog.connect("dialogic_signal", self, "dialog_msg")
+				dialog.connect("timeline_end", self, "unpause")
+		if dialog != null and is_instance_valid(dialog):
+			add_child(dialog)
+			get_tree().paused = true
+		
+func dialog_msg(string):
+	match string:
+		"yes":
+			is_quest_accepted = true
+			is_quest_finished = false
+			Quests.Quest4 = true
+		"no":
+			is_quest_accepted = false
+			is_quest_finished = false
+			Quests.Quest4 = false
+		"yes_not_finished":
+			is_quest_accepted = true
+			is_quest_finished = false
+		"no_not_finished":
+			is_quest_accepted = true
+			is_quest_finished = false
+		"yes_finished":
+			is_quest_accepted = true
+			is_quest_finished = true
+		"no_finished":
+			is_quest_accepted = true
+			is_quest_finished = false
+
+func _on_NPC_talk_body_exited(body):
+	if body.name == "Player":
+		active = false
+

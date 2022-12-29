@@ -8,7 +8,7 @@
 [ext_resource path="res://Hitboxes and Hurtboxes/HitBox.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Enemies/PlayerDetectionZone.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemies/blop_v2.png" type="Texture" id=8]
-[ext_resource path="res://Enemies/Enemy_Scripts/princess_Script.gd" type="Script" id=9]
+[ext_resource path="res://Enemies/Enemy_Scripts/Blop_V2_Script.gd" type="Script" id=9]
 
 [sub_resource type="AtlasTexture" id=23]
 atlas = ExtResource( 8 )
@@ -121,7 +121,7 @@ script = ExtResource( 9 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 6 )
 animation = "Fly"
-frame = 3
+frame = 6
 playing = true
 offset = Vector2( 0, -12 )
 

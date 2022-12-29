@@ -1,0 +1,120 @@
+{
+	"events": [
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "My Ryld!!\nMy prince Ryld has found me!"
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Did you come to save me?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Muahahahahahahaha!\nSave her, he said...\nOh Ryld, you are just a bit too late."
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Your sweet princess is long gone and you’ve only come here for your death."
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "You see, while waiting so long for you to come and save your princess"
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "We the evil spirits of these dungeons possessed her!"
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And we kill poor villagers so we can take over their Village!"
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "And now you!"
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Are you ready to battle?"
+		},
+		{
+			"choice": "Yes",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "yes",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "LET'S BATTLE!"
+		},
+		{
+			"choice": "No",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "no",
+			"event_id": "dialogic_040"
+		},
+		{
+			"character": "character-1672347413.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "If you change your mind, you'll find me here."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.5",
+		"file": "timeline-1672347373.json",
+		"name": "start_princess"
+	}
+}

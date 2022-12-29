@@ -1,0 +1,21 @@
+{
+	"color": "#ffa243ec",
+	"description": "",
+	"display_name": "Princess",
+	"display_name_bool": true,
+	"id": "character-1672347413.json",
+	"mirror_portraits": false,
+	"name": "princess",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

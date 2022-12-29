@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://NPC/princess.png" type="Texture" id=1]
 [ext_resource path="res://Shadows/SmallShadow.png" type="Texture" id=2]
@@ -111,6 +111,9 @@ radius = 5.0
 [sub_resource type="CircleShape2D" id=50]
 radius = 9.05539
 
+[sub_resource type="CircleShape2D" id=54]
+radius = 149.054
+
 [sub_resource type="Animation" id=51]
 length = 0.001
 tracks/0/type = "value"
@@ -167,7 +170,7 @@ script = ExtResource( 4 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 6 )
 animation = "Fly"
-frame = 9
+frame = 11
 playing = true
 offset = Vector2( 0, -32 )
 
@@ -215,6 +218,11 @@ shape = SubResource( 50 )
 
 [node name="WanderController" parent="." instance=ExtResource( 9 )]
 
+[node name="NPC_talk" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC_talk"]
+shape = SubResource( 54 )
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 reset_on_save = false
 anims/RESET = SubResource( 51 )
@@ -223,6 +231,8 @@ anims/Stop = SubResource( 53 )
 
 [connection signal="area_entered" from="HurtBox" to="." method="_on_HurtBox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
+[connection signal="body_entered" from="NPC_talk" to="." method="_on_NPC_talk_body_entered"]
+[connection signal="body_exited" from="NPC_talk" to="." method="_on_NPC_talk_body_exited"]
 
 [editable path="HurtBox"]
 [editable path="PlayerDetectionZone"]
