@@ -95,6 +95,7 @@ config/icon="res://icon.png"
 PlayerStats="*res://Player/PlayerStats.tscn"
 SceneManager="*res://Menu/SceneManager.gd"
 Quests="*res://Global/Quests.gd"
+Global="*res://Global/Global.gd"
 
 [display]
 
@@ -222,6 +223,7 @@ Tab={
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="SoftCollisions"
 2d_physics/layer_7="Door"
+2d_physics/layer_8="Portals"
 
 [physics]
 

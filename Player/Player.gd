@@ -33,6 +33,7 @@ func _ready():
 	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
+	self.global_position = Global.player_initial_map_position
 
 func _physics_process(delta):
 	match state:
