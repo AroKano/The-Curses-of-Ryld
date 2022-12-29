@@ -16,25 +16,25 @@ func _on_NPC_body_entered(body):
 	if body.name == "Player":
 		active = true
 		if not is_quest_accepted and not is_quest_finished:
-			dialog = Dialogic.start("start_Bobby")
+			dialog = Dialogic.start("start_Billy")
 			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 			dialog.connect("dialogic_signal", self, "dialog_msg")
 			dialog.connect("timeline_end", self, "unpause")
 		if is_quest_accepted and not is_quest_finished:
 			if Quests.bats_v2_killed <= 5:
 				Dialogic.set_variable("QuestRequirement", 1)
-				dialog = Dialogic.start("check_not_finished_Bobby")
+				dialog = Dialogic.start("check_not_finished_Billy")
 				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 				dialog.connect("dialogic_signal", self, "dialog_msg")
 				dialog.connect("timeline_end", self, "unpause")
 			if Quests.bats_v2_killed >= 5:
 				Dialogic.set_variable("QuestRequirement", 5)
-				dialog = Dialogic.start("check_finished_Bobby")
+				dialog = Dialogic.start("check_finished_Billy")
 				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 				dialog.connect("dialogic_signal", self, "dialog_msg")
 				dialog.connect("timeline_end", self, "unpause")
 		if is_quest_accepted and is_quest_finished:
-				dialog = Dialogic.start("finish_Bobby")
+				dialog = Dialogic.start("finish_Billy")
 				dialog.pause_mode = Node.PAUSE_MODE_PROCESS
 				dialog.connect("dialogic_signal", self, "dialog_msg")
 				dialog.connect("timeline_end", self, "unpause")

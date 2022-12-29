@@ -1,13 +1,19 @@
 {
 	"events": [
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Oh Ryld!"
+		},
+		{
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Oh Ryld!\nDid you kill all the blobs?"
+			"question": "Did you kill all the red bats?"
 		},
 		{
 			"choice": "Yes",
@@ -21,10 +27,10 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "It looks like you still have a few blops to kill!"
+			"text": "It looks like you still have a few red bats to kill!"
 		},
 		{
 			"choice": "No",
@@ -38,7 +44,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Please kill them, otherwise I can’t help you!"
@@ -53,7 +59,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1671038685.json",
-		"name": "check_not_finished_Bobby"
+		"file": "timeline-1672343711.json",
+		"name": "check_not_finished_Billy"
 	}
 }

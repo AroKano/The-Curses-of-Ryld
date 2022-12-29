@@ -13,6 +13,7 @@ func _get_configuration_warning() -> String:
 		return ""
 
 
+# warning-ignore:unused_argument
 func _on_Portal_body_entered(body):
 	Global.player_initial_map_position = player_spawn_location
 	Global.player_facing_direction = Player_direction

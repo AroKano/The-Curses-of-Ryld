@@ -1,5 +1,5 @@
 {
-	"color": "#ffff0000",
+	"color": "#ff844805",
 	"description": "Das ist Bobby, der erste NPC",
 	"display_name": "Villager Bobby",
 	"display_name_bool": true,
@@ -13,7 +13,7 @@
 	"portraits": [
 		{
 			"name": "Default",
-			"path": "res://NPC/npc_1_portrait.png"
+			"path": ""
 		}
 	],
 	"scale": 100,

@@ -1,19 +1,19 @@
 {
 	"events": [
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Hello there Ryld the knight!"
+			"text": "HEEEELP!!!\nRyld the knight!"
 		},
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "I heard your princess got taken away!"
+			"question": "Are you Ryld the brave knight who's trying to save his princess?"
 		},
 		{
 			"choice": "Yes",
@@ -23,31 +23,19 @@
 			"value": ""
 		},
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "I might know where she might be!\nBut i will only help you, if you help me..."
+			"text": "I will tell you where she is.\nBut first please kill these red bats\notherwise I will die!!"
 		},
 		{
-			"character": "character-1669825820.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "You see, this path is covered by the evil little green blobs and my family is in danger."
-		},
-		{
-			"character": "character-1669825820.json",
-			"event_id": "dialogic_001",
-			"portrait": "",
-			"text": "If you kill the blops, I will for sure help you find your way to your princess."
-		},
-		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "so... will you help me?"
+			"question": "Will you kill them for me?"
 		},
 		{
 			"choice": "Yes",
@@ -61,7 +49,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Thank you!"
@@ -78,7 +66,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "If you change your mind, you'll find me here."
@@ -96,7 +84,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1669825854.json",
-		"name": "start_Bobby"
+		"file": "timeline-1672343689.json",
+		"name": "start_Billy"
 	}
 }

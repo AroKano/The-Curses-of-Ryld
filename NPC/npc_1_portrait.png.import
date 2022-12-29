@@ -2,16 +2,11 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/npc_1_portrait.png-b6ed46809faad33cc16d48804049103c.stex"
-metadata={
-"vram_texture": false
-}
+valid=false
 
 [deps]
 
 source_file="res://NPC/npc_1_portrait.png"
-dest_files=[ "res://.import/npc_1_portrait.png-b6ed46809faad33cc16d48804049103c.stex" ]
-
 [params]
 
 compress/mode=0

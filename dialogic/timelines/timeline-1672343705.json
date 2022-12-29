@@ -1,13 +1,13 @@
 {
 	"events": [
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_010",
 			"options": [
 
 			],
 			"portrait": "",
-			"question": "Oh Ryld!\nDid you kill all the blobs?"
+			"question": "Oh Ryld!\nDid you kill all the red bats?"
 		},
 		{
 			"choice": "Yes",
@@ -21,10 +21,10 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "You're my hero Ryld!\n\nOkay now let me tell you theway...\nWhen you reach the forest labyrinth, dont worry just keep walking between the trees. But be careful of blobs hiding behind trees.\nRemember carefully:\nOnce you reach a big forest,you might see a path rightaway, but beware! That is not the right path! That path is a dead end and its filled with green blobs.\nInstead go down to the end of the forest and take the path there. That way you will be on the right track to find your princess!"
+			"text": "You’re my hero Ryld!\nThank you for saving me!\n\nRemember carefully:\nYour princess is in thedungeon above us. But...\n\nI need to tell you...\n\nShe is different...\n\nUnfortunately I cannot tellyou more than that.\n\nJust remember...\n\nBe ready to fight."
 		},
 		{
 			"choice": "No",
@@ -38,7 +38,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"character": "character-1669825820.json",
+			"character": "character-1672340782.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Please find it, otherwise I can't help you!"
@@ -53,7 +53,7 @@
 	],
 	"metadata": {
 		"dialogic-version": "1.4.5",
-		"file": "timeline-1672232892.json",
-		"name": "check_finished_Bobby"
+		"file": "timeline-1672343705.json",
+		"name": "check_finished_Billy"
 	}
 }

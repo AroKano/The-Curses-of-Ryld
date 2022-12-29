@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://World/BushVio.tscn" type="PackedScene" id=1]
 [ext_resource path="res://World/Tree2.png" type="Texture" id=2]
@@ -23,8 +23,6 @@
 [ext_resource path="res://World/DirtTileset.png" type="Texture" id=21]
 [ext_resource path="res://NPC/NPC_Frankie.tscn" type="PackedScene" id=22]
 [ext_resource path="res://NPC/NPC_Billy.tscn" type="PackedScene" id=23]
-[ext_resource path="res://NPC/NPC_Frankie.gd" type="Script" id=24]
-[ext_resource path="res://NPC/NPC_Billy.gd" type="Script" id=25]
 
 [sub_resource type="TileSet" id=3]
 1/name = "RedBG"
@@ -5669,11 +5667,9 @@ position = Vector2( -1021, -64 )
 
 [node name="NPC_Frankie" parent="YSort/NPC\'s" instance=ExtResource( 22 )]
 position = Vector2( -1239, -460 )
-script = ExtResource( 24 )
 
 [node name="NPC_Billy" parent="YSort/NPC\'s" instance=ExtResource( 23 )]
 position = Vector2( -1225, -385 )
-script = ExtResource( 25 )
 
 [node name="Global" type="YSort" parent="YSort"]
 position = Vector2( -3, 0 )
