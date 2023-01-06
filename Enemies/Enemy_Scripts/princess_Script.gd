@@ -63,6 +63,7 @@ func _physics_process(delta):
 		velocity += softCollision.get_push_vector() * 10
 	velocity = move_and_slide(velocity)
 	
+# warning-ignore:unused_argument
 func unpause (timeline_end):
 	get_tree().paused = false
 	
